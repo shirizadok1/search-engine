@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
+  body {
+    background-color: #576F72;
+    background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+  }
+  
+
+  .search-area{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 5%;
+    
+  }
+
+  .search-bar input{
+    background:transparent;
+    flex: 1;
+    padding: 24px 20px;
+    font-size: 20px;
+  }
+
+  .search-img{
+    width: 20%;
+    background-color: #576F72;
+    background-image:url("https://www.transparenttextures.com/patterns/black-felt.png");
+
+  }
+  
+  footer {
+    background-color: #E4DCCF;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    padding: 1%;
+  }
+  
+  footer p {
+    color: #fff;
+  }
