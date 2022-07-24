@@ -7,10 +7,12 @@ import Navbar from 'react-bootstrap/Navbar';
 function NavbarComponent() {
 
   return (
-    
-    <Navbar bg="light" expand="lg">
+    <Navbar className="navbar-dark navbar-expand-md" expand="lg">
+    <div class="col-md-6 col-lg-4 col-xl-3">
+    <div className="container-fluid">
       <Container>
-        <Navbar.Brand href="#home">Image Search</Navbar.Brand>
+      <img class="title-img" src="favicon.ico" />
+        <Navbar.Brand href="/">Image Search</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -19,7 +21,8 @@ function NavbarComponent() {
           </Nav>
         </Navbar.Collapse>
       </Container>
-
+      </div>
+      </div>
     </Navbar>
   );
 }

@@ -24,12 +24,12 @@ function Footer() {
             <MDBIcon fab icon='linkedin-in' />
           </a>
 
-          <a className='btn btn-outline-light btn-floating m-1' href='#!' role='button'>
+          <a className='btn btn-outline-light btn-floating m-1' href='https://github.com/shirizadok1' role='button'>
             <MDBIcon fab icon='github' />
           </a>
         </section>
       </MDBContainer>
-
+      
       <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
         © {year} Copyright: Shiri Zadok
       </div>

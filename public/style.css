@@ -1,13 +1,36 @@
   
-  html, body {
+    body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     height: 100%;
     font-family: "Montserrat", sans-serif;
-    background-color: #576F72;
+    /* background-color: #576F72; */
     background-image: url("https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   }
+  
+  .title-img{
+    left:0px;
+    padding-right: 1%;
+    width: 20%;
+    max-height: 10%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .navbar{
+  position: fixed;
+  top: 0px;
+  margin-left: 3%;
+  color: white;
+  font-size: medium;
+  }
+
+  head{
+  position: sticky;
+  top: 0px;
+  height: 6rem;
+  }
+
 
   .SearchArea{
     display: flex;
@@ -17,33 +40,10 @@
   }
 
   .footer {
+    height: 4%;
     position: absolute; 
     bottom: 0;
     left: 0; 
     right: 0;
   }
   
-
-   /* .search-area{
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    padding: 5%;
-    
-  }
-
-  .search-bar input{
-    background:transparent;
-    flex: 1;
-    padding: 24px 20px;
-    font-size: 20px;
-  }
-
-  .search-img{
-    width: 20%;
-    background-color: #576F72;
-    background-image:url("https://www.transparenttextures.com/patterns/black-felt.png");
-
-  } 
-  
-    */
