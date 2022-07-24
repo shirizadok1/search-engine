@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import SearchArea  from "./SearchArea";
+import Content from "./Content";
 
 
 function App() {
-    return(
-        
+
+    return (
         <div className="App">
             <Header />
-            <SearchArea />
+            <Content />
             <Footer />
         </div>
-    
+
     );
 }
 
