@@ -1,14 +1,13 @@
-  
-    body {
+  body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     height: 100%;
     font-family: "Montserrat", sans-serif;
     /* background-color: #576F72; */
-    background-image: url("https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-image: url("https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=800&dpr=1");
   }
-  
+
   /* .title-img{
     left:0px;
     padding-right: 1%;
@@ -17,12 +16,12 @@
     display: inline-block;
     vertical-align: top;
   } */
-  .navbar{
-  position: fixed;
-  top: 0px;
-  margin-left: 3%;
-  color: white;
-  font-size: medium;
+  .navbar {
+    position: fixed;
+    top: 0px;
+    margin-left: 3%;
+    color: white;
+    font-size: medium;
   }
 
 
@@ -33,17 +32,53 @@
   } */
 
 
-  .SearchArea{
+  .SearchArea {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 5%;
   }
 
-  .footer {
-    position: absolute; 
-    bottom: 0;
-    left: 0; 
-    right: 0;
+  .about-page {
+    font-family: "Montserrat", sans-serif;
+    color: azure;
+    text-align: center;
+    font-size: 2rem;
+
+  }
+
+  .about-me {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    color: azure;
+    padding-bottom: 2%;
+
+  }
+  .wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
   }
   
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }

@@ -38,12 +38,12 @@ function SearchArea() {
         const renderData = (cards) => {
             return(
                 cards.map((data, index) => {
-                    return (<Card data={data} key={index} />)
+                    return (<Card data={data} key={index}/ >)
                 })
             );
         }
-        
-    }
+        }
+
 
     return (
         <div className="SearchArea">
