@@ -4,7 +4,7 @@ import SearchArea from "./SearchArea";
 function Content() {
     return (
         <SearchArea />
-
+     
     );
 }
 

@@ -9,14 +9,14 @@
     background-image: url("https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   }
   
-  .title-img{
+  /* .title-img{
     left:0px;
     padding-right: 1%;
     width: 20%;
     max-height: 10%;
     display: inline-block;
     vertical-align: top;
-  }
+  } */
   .navbar{
   position: fixed;
   top: 0px;
@@ -25,11 +25,12 @@
   font-size: medium;
   }
 
-  head{
+
+  /* head{
   position: sticky;
   top: 0px;
   height: 6rem;
-  }
+  } */
 
 
   .SearchArea{
@@ -40,7 +41,6 @@
   }
 
   .footer {
-    height: 4%;
     position: absolute; 
     bottom: 0;
     left: 0; 
