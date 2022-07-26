@@ -19,21 +19,17 @@ function Content() {
                 onSearch={handleNewData}
             />
 
-            {cards.map((item, index) => {
-                    console.log(cards)
             
-            })};
-
-            
-            {/* {cards.map((item, index) => {
+             {cards.map((cardItem) => {
                 return (
                     <Card
-                        key={index}
-                        id={index}
-                        title={item.title}
+                        key={cardItem.index}
+                        id={cardItem.index}
+                        title={cardItem.title}
+                        img={cardItem.img}
                     />
                 );
-            })} */}
+            })} 
         </div>
     );
 }

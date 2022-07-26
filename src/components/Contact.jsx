@@ -32,21 +32,10 @@ function Contact() {
             <div className="row">
                 <div className="col-md-12">
                     <div className="md-form mb-0">
-                        <input type="text" id="subject" name="subject" className="form-control text-white" placeholder="Your message"></input>
+                        <input type="text" id="message" name="message" className="form-control text-white" placeholder="Your message"></input>
                     </div>
                 </div>
             </div>
-
-            {/* <div class="row">
-
-                <div class="col-md-12">
-
-                    <div class="md-form text-white">
-                        <textarea type="text" id="message" placeholder="" name="message" rows="2" class="form-control md-textarea"></textarea>
-                    </div>
-
-                </div>
-            </div> */}
 
         </form>
 

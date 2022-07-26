@@ -7,6 +7,7 @@ function Card(props) {
             <img className="card-img-top" src="..." alt="Card image cap" />
                 <div className="card-body">
                     <p className="card-text">{props.title}</p>
+                    <p className="card-img">{props.img}</p>
 
                 </div>
         </div>

@@ -1,14 +1,18 @@
-  body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    height: 100%;
-    font-family: "Montserrat", sans-serif;
-    /* background-color: #576F72; */
-    background-image: url("https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=800&dpr=1");
-  }
+html,
+body {
+  background: url("https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
 
-  /* .title-img{
+/* .title-img{
     left:0px;
     padding-right: 1%;
     width: 20%;
@@ -16,69 +20,111 @@
     display: inline-block;
     vertical-align: top;
   } */
-  .navbar {
-    position: fixed;
-    top: 0px;
-    margin-left: 3%;
-    color: white;
-    font-size: medium;
-  }
+.navbar {
+  position: fixed;
+  top: 0px;
+  margin-left: 3%;
+  color: white;
+  font-size: medium;
+}
 
 
-  /* head{
+/* head{
   position: sticky;
   top: 0px;
   height: 6rem;
   } */
 
 
-  .SearchArea {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5%;
+.SearchArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.about-page {
+  font-family: "Montserrat", sans-serif;
+  color: azure;
+  text-align: center;
+  font-size: 2rem;
+
+}
+
+.about-me {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  color: azure;
+  padding-bottom: 2%;
+
+}
+
+.wave {
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0.0deg)
   }
 
-  .about-page {
-    font-family: "Montserrat", sans-serif;
-    color: azure;
-    text-align: center;
-    font-size: 2rem;
-
+  10% {
+    transform: rotate(14.0deg)
   }
 
-  .about-me {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 2.5rem;
-    text-align: center;
-    color: azure;
-    padding-bottom: 2%;
-
-  }
-  .wave {
-    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-    animation-duration: 2.5s;        /* Change to speed up or slow down */
-    animation-iteration-count: infinite;  /* Never stop waving :) */
-    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
-    display: inline-block;
-  }
-  
-  @keyframes wave-animation {
-      0% { transform: rotate( 0.0deg) }
-     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-     20% { transform: rotate(-8.0deg) }
-     30% { transform: rotate(14.0deg) }
-     40% { transform: rotate(-4.0deg) }
-     50% { transform: rotate(10.0deg) }
-     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-    100% { transform: rotate( 0.0deg) }
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8.0deg)
   }
 
+  30% {
+    transform: rotate(14.0deg)
+  }
 
+  40% {
+    transform: rotate(-4.0deg)
+  }
+
+  50% {
+    transform: rotate(10.0deg)
+  }
+
+  60% {
+    transform: rotate(0.0deg)
+  }
+
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0.0deg)
+  }
+}
+
+@media (min-width: 992px) {
   .footer {
+    height: 10%;
     position: absolute;
+    right: 0;
     bottom: 0;
     left: 0;
-    right: 0;
   }
+}
+
+#message::placeholder {
+  color: white;
+}
+#email::placeholder{
+  color: white;
+}
+#name::placeholder{
+  color: white;
+}
