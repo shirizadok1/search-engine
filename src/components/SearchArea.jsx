@@ -3,10 +3,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
-import { ImSearch } from 'react-icons/im';
+import SearchIcon from "@material-ui/icons/Search";
 import Card from "./Card";
 
-function SearchArea() {
+function SearchArea(props) {
 
     const [searchClick, setSearchClick] = useState("");
 
@@ -25,24 +25,21 @@ function SearchArea() {
                 data.push(item)
 
             });
-            renderData(data);
+            submitSearch(data);
             console.log(data)
 
-            // const card = new Card()
-            // cards.push(data)
 
         };
 
         getData();
 
-        const renderData = (cards) => {
-            return(
-                cards.map((data, index) => {
-                    return (<Card data={data} key={index}/ >)
-                })
-            );
+        function submitSearch(data) {
+            props.onSearch(data);
+
         }
-        }
+
+
+    }
 
 
     return (
@@ -56,7 +53,7 @@ function SearchArea() {
                         aria-describedby="basic-addon2"
                     />
                     <Button variant="outline-secondary" id="button-addon2" onClick={handleClick}>
-                        <ImSearch />
+                        <SearchIcon />
                     </Button>
                 </InputGroup>
             </div>
