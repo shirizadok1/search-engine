@@ -24,7 +24,6 @@ function Content() {
                 return (
                     <Card
                         key={cardItem.index}
-                        id={cardItem.index}
                         title={cardItem.title}
                         img={cardItem.img}
                     />
