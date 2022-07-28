@@ -10,7 +10,6 @@ import Card from "./Card";
 
 function SearchArea(props) {
 
-
     const [photo, setPhoto] = useState("");
     const [clientId, setClientId] = useState("YYYw7oE7qPoGGH0TZb3J-h7stckt87pGkvD3-019_bk#");
     const [answer, setAnswer] = useState([]);
@@ -21,21 +20,36 @@ function SearchArea(props) {
         setPhoto(event.target.value);
     }
 
-    function handleClick() {
-        const url = "https://api.unsplash.com/search/photos?query=" + photo + "&per_page=30&client_id=" + clientId;
+    const url =
+        "https://api.unsplash.com/search/photos/?query=" +
+        photo +
+        "&per_page=30&client_id=" +
+        clientId +
+        "&page=" +
+        page;
 
+    function handleClick() {
         axios.get(url).then((response) => {
             console.log(response);
             setAnswer(response.data.results);
         });
     }
+    const fetchImages = () => {
+        axios.get(url)
+            .then((response) => {
+                setAnswer([...answer, ...response.data.results]);
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+        setPage(page + 1);
+    };
     const handleKeypress = (e) => {
         //it triggers by pressing the enter key
         if (e.charCode === 13) {
             handleClick();
         }
     };
-
 
 
     return (
@@ -53,20 +67,23 @@ function SearchArea(props) {
                     </Button>
 
                     <InfiniteScroll
-
                         dataLength={answer.length}
-                        next={() => { setPage(page + 1) }}
+                        next={fetchImages}
                         hasMore={true}
-                        
                     >
-                        <div className="container mt-2 card-deck">
-                            
+                        <div className="container-fluid d-flex align-content-around flex-wrap">
+                            <div className="row">
+                                <div className="col">
                                     {answer.map((photo, index) => (
-                                        <Card title={photo.description} img={photo.urls.small} key={index}/>
-                                        
+                                        <Card
+                                            img={photo.urls.small}
+                                            title={photo.description}
+                                            key={index} />
+
                                     ))}
-                                
+                                </div>
                             </div>
+                        </div>
 
                     </InfiniteScroll>
 
