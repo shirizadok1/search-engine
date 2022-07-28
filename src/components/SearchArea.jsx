@@ -53,14 +53,21 @@ function SearchArea(props) {
                     </Button>
 
                     <InfiniteScroll
-                        dataLength={answer.length} 
-                        next={() => {setPage(page +1)}}
+
+                        dataLength={answer.length}
+                        next={() => { setPage(page + 1) }}
                         hasMore={true}
-                        className="flex flex-wrap"
+                        
                     >
-                        {answer.map((photo) => (
-                            <img alt="" src={photo.urls.small} />
-                        ))}
+                        <div className="container mt-2 card-deck">
+                            
+                                    {answer.map((photo, index) => (
+                                        <Card title={photo.description} img={photo.urls.small} key={index}/>
+                                        
+                                    ))}
+                                
+                            </div>
+
                     </InfiniteScroll>
 
                 </InputGroup>
