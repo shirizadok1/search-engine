@@ -7,6 +7,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import axios from "axios";
 import InfiniteScroll from 'react-infinite-scroll-component';
 import Card from "./Card";
+import { Container, Row, Col } from 'react-bootstrap';
 
 function SearchArea(props) {
 
@@ -71,25 +72,25 @@ function SearchArea(props) {
                         next={fetchImages}
                         hasMore={true}
                     >
-                        <div className="container-fluid d-flex align-content-around flex-wrap">
-                            <div className="row">
-                                <div className="col">
+                        <Container fluid>
+                            <Row>
+                                <Col sm="4">
                                     {answer.map((photo, index) => (
                                         <Card
                                             img={photo.urls.small}
                                             title={photo.description}
                                             key={index} />
+                                        
+                        ))}
+                        </Col>
+                        </Row>
+                    </Container>
 
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
+                </InfiniteScroll>
 
-                    </InfiniteScroll>
-
-                </InputGroup>
-            </div>
+            </InputGroup>
         </div>
+        </div >
     );
 }
 
