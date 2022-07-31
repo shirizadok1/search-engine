@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 function Contact() {
-    const form = useRef();
+    const form = useRef(); //useRef allows you to persist values between renders.It can be used to store a mutable value that does not cause a re-render when updated.
     const [loading, setLoading]= useState(false);
 
     const sendEmail = (e) => {
@@ -11,9 +11,9 @@ function Contact() {
   
       emailjs.sendForm('service_dhknee6', 'template_p18tcao', form.current, '8bV747R1UYBcLgPGd')
         .then((result) => {
-            console.log(result.text);
+            alert("I have received your message, thanks!");
         }, (error) => {
-            console.log(error.text);
+            alert("Oops, something went wrong!");
         });
         setLoading(false);
 

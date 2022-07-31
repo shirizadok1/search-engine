@@ -64,7 +64,7 @@ function SearchArea(props) {
                         aria-describedby="basic-addon2"
                     />
                     <Button variant="outline-secondary" id="button-addon2" onClick={handleClick}>
-                        <SearchIcon />
+                        <SearchIcon className="search-icon" />
                     </Button>
 
                     <InfiniteScroll
@@ -72,24 +72,23 @@ function SearchArea(props) {
                         next={fetchImages}
                         hasMore={true}
                     >
-                        <Container fluid>
-                            <Row>
-                                <Col sm="4">
-                                    {answer.map((photo, index) => (
-                                        <Card
+                        <Container fluid className="container">
+                            <Row className="row gy-4">
+                                {answer.map((photo, index) => (
+                                    <Col className="col-md-4">
+                                        <Card className="card w-100 h-100"
                                             img={photo.urls.small}
-                                            title={photo.description}
                                             key={index} />
-                                        
-                        ))}
-                        </Col>
-                        </Row>
-                    </Container>
+                                    </Col>
+                                ))}
 
-                </InfiniteScroll>
+                            </Row>
+                        </Container>
 
-            </InputGroup>
-        </div>
+                    </InfiniteScroll>
+
+                </InputGroup>
+            </div>
         </div >
     );
 }

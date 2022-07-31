@@ -9,6 +9,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   height: 100%;
+  width: 100%;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -29,11 +30,35 @@ body {
 }
 
 
-.SearchArea {
+ .SearchArea {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 5%;
+} 
+.col-md-4 {
+  flex: 0 0 33.3333333%;
+  max-width: 33.3333333%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+}
+.card:hover {
+  transform: scale(1.5);
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4);
+  z-index: 3;
+  border-color: #007bff !important;
+}
+.search-icon {
+  color: azure;
+  border: "1px solid #484850";
+  border-radius: "5px 5px 0 0";
+  outline: none !important;
+  outline-style: none !important;
+  
+
 }
 
 .about-page {
