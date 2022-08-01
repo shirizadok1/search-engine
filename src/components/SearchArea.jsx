@@ -76,7 +76,7 @@ function SearchArea(props) {
                             <Row className="row gy-4">
                                 {answer.map((photo, index) => (
                                     <Col className="col-md-4">
-                                        <Card className="card w-100 h-100"
+                                        <Card className="card-image"
                                             img={photo.urls.small}
                                             key={index} />
                                     </Col>

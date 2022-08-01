@@ -45,6 +45,15 @@ body {
   padding-left: 15px;
   display: flex;
 }
+.card-image {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 40rem;
+  height: 500px;
+}
+
+
 .card:hover {
   transform: scale(1.5);
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4);
@@ -53,8 +62,8 @@ body {
 }
 .search-icon {
   color: azure;
-  border: "1px solid #484850";
-  border-radius: "5px 5px 0 0";
+  /* border: "1px solid #484850";
+  border-radius: "5px 5px 0 0"; */
   outline: none !important;
   outline-style: none !important;
   
