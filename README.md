@@ -4,7 +4,7 @@ Search-enginee-project
 Javascript with React.js
 Bootstrap5
 HTML5
-Getting Image Data by Unsplash Api.
+Getting Image Data by using REST API from unsplash.com
 
 Demo
 -----------------------------------------------------------------------------------------------------------------------
