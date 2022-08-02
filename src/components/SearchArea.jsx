@@ -56,8 +56,6 @@ function SearchArea(props) {
 
     return (
         <div className="SearchArea">
-            <div className="container h-100">
-                <div className="row h-100 justify-content-center align-items-center"></div>
                 <InputGroup onChange={handleChange} onKeyPress={handleKeypress} className="col-6">
                     <FormControl
                         placeholder="Search Anything!"
@@ -75,23 +73,19 @@ function SearchArea(props) {
                         next={fetchImages}
                         hasMore={true}
                     >
-                        <Container fluid>
-                            <Row>
-                                <div className="grid">
-                                    <div className="box"></div>
+                                <div className="grid flex">
                                     {answer.map((photo, index) => (
-                                        <Card className="box"
+                                        <div className="box">
+                                        <Card
                                             img={photo.urls.small}
                                             key={index} />
+                                            </div>
                                     ))}
 
                                 </div>
-                            </Row>
-                        </Container>
                     </InfiniteScroll>
                 </InputGroup>
             </div>
-        </div>
     );
 }
 
