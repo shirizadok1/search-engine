@@ -1,4 +1,6 @@
 import React from "react";
+import "./Box.css";
+
 
 function Card(props) {
 
@@ -7,7 +9,7 @@ function Card(props) {
 
             <div className="card-body">
                 <p className="card-text">{props.title}</p>
-                <p className="card-img"><img className="card-img-top" src={props.img} alt="Card image cap" /></p>
+                <p className="card-img"><img className="card-img-class" src={props.img} alt="Card image cap" /></p>
 
             </div>
         </div>

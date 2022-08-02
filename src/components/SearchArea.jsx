@@ -8,6 +8,7 @@ import axios from "axios";
 import InfiniteScroll from 'react-infinite-scroll-component';
 import Card from "./Card";
 import { Container, Row, Col } from 'react-bootstrap';
+import "./Box.css";
 
 function SearchArea(props) {
 
@@ -64,7 +65,9 @@ function SearchArea(props) {
                         aria-describedby="basic-addon2"
                     />
                     <Button variant="outline-secondary" id="button-addon2" onClick={handleClick}>
-                        <SearchIcon className="search-icon" />
+                        <div className="search-icon">
+                            <SearchIcon />
+                        </div>
                     </Button>
 
                     <InfiniteScroll
@@ -72,24 +75,23 @@ function SearchArea(props) {
                         next={fetchImages}
                         hasMore={true}
                     >
-                        <Container fluid className="container">
-                            <Row className="row gy-4">
-                                {answer.map((photo, index) => (
-                                    <Col className="col-md-4">
-                                        <Card className="card-image"
+                        <Container fluid>
+                            <Row>
+                                <div className="grid">
+                                    <div className="box"></div>
+                                    {answer.map((photo, index) => (
+                                        <Card className="box"
                                             img={photo.urls.small}
                                             key={index} />
-                                    </Col>
-                                ))}
+                                    ))}
 
+                                </div>
                             </Row>
                         </Container>
-
                     </InfiniteScroll>
-
                 </InputGroup>
             </div>
-        </div >
+        </div>
     );
 }
 
