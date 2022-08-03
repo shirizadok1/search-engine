@@ -49,6 +49,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .card-img-class{
   flex-basis: 100%;
   height: 200px;
