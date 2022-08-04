@@ -25,7 +25,6 @@ function Contact() {
         <section className="mb-4">
 
             <h2 className="h1-responsive font-weight-bold text-center my-4 text-white about-me">Get in touch with me at any time!</h2>
-            <p className="text-center w-responsive mx-auto mb-5 text-white about-page">Please do not hesitate to contact me directly!</p>
 
             <div className="row">
 
