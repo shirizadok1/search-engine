@@ -18,6 +18,8 @@ function Contact() {
         setLoading(false);
 
     };
+    
+
   
     return (
         <section className="mb-4">
@@ -28,20 +30,20 @@ function Contact() {
             <div className="row">
 
                 <div className="col-md-9 mb-md-0 mb-5">
-                    <form className="needs-validation" data-toggle="validator" id="contact-form" name="contact-form" ref={form} method="POST" encType="text/plain" novalidate>
+                    <form className="needs-validation" data-toggle="validator" id="contact-form" name="contact-form" ref={form} method="POST" encType="text/plain">
 
                         <div className="contact-form"></div>
                         <div className="row">
 
                             <div className="col-md-6">
                                 <div className="md-form mb-0">
-                                    <input type="text" id="name" name="name" className="form-control text-white" placeholder="Your name" required />
+                                    <input type="text" id="name" name="name" className="form-control text-white" placeholder="Your name" required/>
                                 </div>
                             </div>
 
                             <div className="col-md-6">
                                 <div className="md-form mb-0">
-                                    <input type="text" id="email" name="email" className="form-control text-white" placeholder="Your email" required />
+                                    <input type="text" id="email" name="email" className="form-control text-white" placeholder="Your email" required/>
                                 </div>
                             </div>
 
@@ -50,7 +52,7 @@ function Contact() {
                         <div className="row">
                             <div className="col-md-12">
                                 <div className="md-form mb-0">
-                                    <input type="text" id="message" name="message" className="form-control text-white" placeholder="Your message" required />
+                                    <input type="text" id="message" name="message" className="form-control text-white" placeholder="Your message" required/>
                                 </div>
                             </div>
                         </div>

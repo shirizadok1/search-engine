@@ -8,7 +8,7 @@ function About() {
 
             </h2>
             <div className="about-page">
-                <p >I'm a Front-end/Fullstack</p>
+                <p >I'm a Front-end/Fullstack developer</p>
                 <p>This project is an image search engine that I have set up.</p>
                 <p>Feel free to search for any images you wish!</p>
             </div>
