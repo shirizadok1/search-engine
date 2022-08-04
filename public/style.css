@@ -155,3 +155,8 @@ body {
 #name::placeholder{
   color: white;
 }
+
+.footer{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

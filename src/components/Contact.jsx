@@ -28,20 +28,20 @@ function Contact() {
             <div className="row">
 
                 <div className="col-md-9 mb-md-0 mb-5">
-                    <form id="contact-form" name="contact-form"  ref={form} method="POST" encType="text/plain">
+                    <form className="needs-validation" data-toggle="validator" id="contact-form" name="contact-form" ref={form} method="POST" encType="text/plain" novalidate>
 
                         <div className="contact-form"></div>
                         <div className="row">
 
                             <div className="col-md-6">
                                 <div className="md-form mb-0">
-                                    <input type="text" id="name" name="name" className="form-control text-white" placeholder="Your name"></input>
+                                    <input type="text" id="name" name="name" className="form-control text-white" placeholder="Your name" required />
                                 </div>
                             </div>
 
                             <div className="col-md-6">
                                 <div className="md-form mb-0">
-                                    <input type="text" id="email" name="email" className="form-control text-white" placeholder="Your email"></input>
+                                    <input type="text" id="email" name="email" className="form-control text-white" placeholder="Your email" required />
                                 </div>
                             </div>
 
@@ -50,7 +50,7 @@ function Contact() {
                         <div className="row">
                             <div className="col-md-12">
                                 <div className="md-form mb-0">
-                                    <input type="text" id="message" name="message" className="form-control text-white" placeholder="Your message"></input>
+                                    <input type="text" id="message" name="message" className="form-control text-white" placeholder="Your message" required />
                                 </div>
                             </div>
                         </div>
@@ -58,7 +58,7 @@ function Contact() {
                     </form>
 
                     <div className="text-center text-md-left">
-                        <a className="btn btn-primary" disabled={loading} onClick={sendEmail} value="Send Email">Send</a>
+                        <a className="btn btn-primary" disabled={loading} type="submit" onClick={sendEmail} value="Send Email">Send</a>
                     </div>
                     <div className="status"></div>
                 </div>
