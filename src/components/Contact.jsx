@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Button } from 'react-bootstrap';
-
+import validator from 'validator';
 
 function Contact() {
     const form = useRef(); //useRef allows you to persist values between renders.It can be used to store a multible values that does not cause a re-render when updated.
@@ -9,7 +9,9 @@ function Contact() {
     const [message, setMessage] = useState('');
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    const [Error, setError] = useState(null);
+    const [error, setError] = useState(null);
+    const [emailError, setEmailError] = useState(null);
+
 
 
     const sendEmail = (e) => {
@@ -36,19 +38,16 @@ function Contact() {
     const handleNameChange = (event) => {
         setName(event.target.value);
     }
-    const handleEmailChange = (event) => {
-        // if (!isValidEmail(event.target.value)) {
-        //     alert('Email is invalid');
-        // } else {
-        //     alert("email is validate");
-        // }
+    const validateEmail = (event) => {
+        const email = event.target.value
 
-        setEmail(event.target.value);
+        if (validator.isEmail(email)) {
+            setEmail(email);
+        } else {
+            setEmailError('Enter valid Email!')
+        }
     }
 
-    function isValidEmail(email) {
-        return /\S+@\S+\.\S+/.test(email);
-    };
 
 
     return (
@@ -67,14 +66,19 @@ function Contact() {
                             <div className="col-md-6">
                                 <div className="md-form mb-0">
                                     <input type="text" id="name" value={name} name="name" className="form-control text-white" placeholder="Your name"
-                                    onChange={handleNameChange} />
+                                        onChange={handleNameChange} />
                                 </div>
                             </div>
 
                             <div className="col-md-6">
                                 <div className="md-form mb-0">
                                     <input type="text" id="email" value={email} name="email" className="form-control text-white" placeholder="Your email"
-                                    onChange={handleEmailChange} />
+                                        onChange={validateEmail} /> <br/>
+                                        <span style={{
+                                            fontWeight: 'bold',
+                                            color: 'red',
+                                        }}>{emailError}</span>
+                                   
                                 </div>
                             </div>
 
@@ -95,7 +99,7 @@ function Contact() {
                         <button
                             className="btn btn-primary"
                             disabled={(!message || !name || !email)}
-                            type="submit" 
+                            type="submit"
                             onClick={sendEmail}
                             value="Send Email"
                             style={{ height: "48px", width: "150px" }}>
