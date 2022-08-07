@@ -32,7 +32,8 @@
     "react-scripts": "3.2.0",
     "react-social-icons": "^5.14.0",
     "save-dev": "^0.0.1-security",
-    "uuid": "3.3.3"
+    "uuid": "3.3.3",
+    "validator": "^13.7.0"
   },
   "scripts": {
     "start": "react-scripts start",

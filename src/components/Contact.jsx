@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Button } from 'react-bootstrap';
 
+
 function Contact() {
     const form = useRef(); //useRef allows you to persist values between renders.It can be used to store a multible values that does not cause a re-render when updated.
     const [enabled, setEnabled] = useState(false);
@@ -37,17 +38,17 @@ function Contact() {
     }
     const handleEmailChange = (event) => {
         // if (!isValidEmail(event.target.value)) {
-        //     setError('Email is invalid');
+        //     alert('Email is invalid');
         // } else {
-        //     setError(null);
+        //     alert("email is validate");
         // }
 
         setEmail(event.target.value);
     }
 
-    // function isValidEmail(email) {
-    //     return /\S+@\S+\.\S+/.test(email);
-    // };
+    function isValidEmail(email) {
+        return /\S+@\S+\.\S+/.test(email);
+    };
 
 
     return (
