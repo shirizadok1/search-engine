@@ -11,4 +11,4 @@ Visit the website here: https://search-engine-deploy.herokuapp.com/
 Demo
 -----------------------------------------------------------------------------------------------------------------------
 
-[New Recording - 3.8.2022, 11_02_10.webm](https://user-images.githubusercontent.com/85099151/182556621-a91357de-0e09-402b-ad4a-31a76ef76d9f.webm)
+[New Recording - 8.8.2022, 17_59_11.webm](https://user-images.githubusercontent.com/85099151/183448821-809e7d5e-9187-4532-87bb-42fd22f80109.webm)
