@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.js": "/search-enginee-project/static/js/main.e688b39e.chunk.js",
-    "main.js.map": "/search-enginee-project/static/js/main.e688b39e.chunk.js.map",
-    "runtime-main.js": "/search-enginee-project/static/js/runtime-main.8ea18eb0.js",
-    "runtime-main.js.map": "/search-enginee-project/static/js/runtime-main.8ea18eb0.js.map",
-    "static/css/2.18f060a8.chunk.css": "/search-enginee-project/static/css/2.18f060a8.chunk.css",
-    "static/js/2.2fc1abd3.chunk.js": "/search-enginee-project/static/js/2.2fc1abd3.chunk.js",
-    "static/js/2.2fc1abd3.chunk.js.map": "/search-enginee-project/static/js/2.2fc1abd3.chunk.js.map",
-    "index.html": "/search-enginee-project/index.html",
-    "precache-manifest.7906e06091ae774233b5656a359869a7.js": "/search-enginee-project/precache-manifest.7906e06091ae774233b5656a359869a7.js",
-    "service-worker.js": "/search-enginee-project/service-worker.js",
-    "static/css/2.18f060a8.chunk.css.map": "/search-enginee-project/static/css/2.18f060a8.chunk.css.map",
-    "static/media/mdb.css": "/search-enginee-project/static/media/arrow_right.d9ccc77c.svg",
-    "static/media/all.min.css": "/search-enginee-project/static/media/fa-solid-900.d824df7e.woff2"
+    "main.js": "/search-engine/static/js/main.8df6f274.chunk.js",
+    "main.js.map": "/search-engine/static/js/main.8df6f274.chunk.js.map",
+    "runtime-main.js": "/search-engine/static/js/runtime-main.6fac6771.js",
+    "runtime-main.js.map": "/search-engine/static/js/runtime-main.6fac6771.js.map",
+    "static/css/2.5e7b67e6.chunk.css": "/search-engine/static/css/2.5e7b67e6.chunk.css",
+    "static/js/2.1aa4fc21.chunk.js": "/search-engine/static/js/2.1aa4fc21.chunk.js",
+    "static/js/2.1aa4fc21.chunk.js.map": "/search-engine/static/js/2.1aa4fc21.chunk.js.map",
+    "index.html": "/search-engine/index.html",
+    "precache-manifest.315b4297e776cd18aa50b67cb6e5e197.js": "/search-engine/precache-manifest.315b4297e776cd18aa50b67cb6e5e197.js",
+    "service-worker.js": "/search-engine/service-worker.js",
+    "static/css/2.5e7b67e6.chunk.css.map": "/search-engine/static/css/2.5e7b67e6.chunk.css.map",
+    "static/media/mdb.css": "/search-engine/static/media/arrow_right.d9ccc77c.svg",
+    "static/media/all.min.css": "/search-engine/static/media/fa-solid-900.d824df7e.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.8ea18eb0.js",
-    "static/css/2.18f060a8.chunk.css",
-    "static/js/2.2fc1abd3.chunk.js",
-    "static/js/main.e688b39e.chunk.js"
+    "static/js/runtime-main.6fac6771.js",
+    "static/css/2.5e7b67e6.chunk.css",
+    "static/js/2.1aa4fc21.chunk.js",
+    "static/js/main.8df6f274.chunk.js"
   ]
 }
