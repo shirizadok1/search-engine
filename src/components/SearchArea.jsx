@@ -4,6 +4,7 @@ import InputGroup from "react-bootstrap/InputGroup"
 import FormControl from "react-bootstrap/FormControl"
 import Button from "react-bootstrap/Button"
 import axios from "axios"
+import { BsSearch } from "react-icons/bs";
 import InfiniteScroll from "react-infinite-scroll-component"
 import Card from "./Card"
 import { Container, Row, Col } from "react-bootstrap"
@@ -78,7 +79,7 @@ function SearchArea(props) {
                                     style={{ width: "150px", height: "42px" }}
                                 >
                                     <div className="search-icon">
-                                    <FontAwesomeIcon icon="fas fa-search" />
+                                    <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />
                                     </div>
                                 </Button>
                             </div>
