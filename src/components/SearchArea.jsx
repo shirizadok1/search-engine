@@ -78,7 +78,7 @@ function SearchArea(props) {
                                     style={{ width: "150px", height: "42px" }}
                                 >
                                     <div className="search-icon">
-                                        {/* <SearchIcon /> */}
+                                    <FontAwesomeIcon icon="fas fa-search" />
                                     </div>
                                 </Button>
                             </div>
