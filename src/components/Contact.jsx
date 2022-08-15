@@ -28,9 +28,6 @@ function Contact() {
 
     };
 
-    // const canNotSend = () => {
-    //     return (!message && !name && !email);
-    // }
 
     const handleMessageChange = (event) => {
         setMessage(event.target.value);

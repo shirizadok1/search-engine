@@ -19,7 +19,6 @@ function Content() {
                 onSearch={handleNewData}
             />
 
-            
              {cards.map((cardItem) => {
                 return (
                     <Card
