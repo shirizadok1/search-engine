@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import InputGroup from "react-bootstrap/InputGroup"
 import FormControl from "react-bootstrap/FormControl"
 import Button from "react-bootstrap/Button"
-import SearchIcon from "@material-ui/icons/Search"
 import axios from "axios"
 import InfiniteScroll from "react-infinite-scroll-component"
 import Card from "./Card"
@@ -79,7 +78,7 @@ function SearchArea(props) {
                                     style={{ width: "150px", height: "42px" }}
                                 >
                                     <div className="search-icon">
-                                        <SearchIcon />
+                                        {/* <SearchIcon /> */}
                                     </div>
                                 </Button>
                             </div>
