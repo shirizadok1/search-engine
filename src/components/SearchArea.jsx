@@ -7,7 +7,9 @@ import axios from "axios";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Card from "./Card";
 import { Container, Row, Col } from "react-bootstrap";
-import { IoSearch } from "react-icons/io";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
 
 
 function SearchArea() {
@@ -79,9 +81,9 @@ function SearchArea() {
                                     style={{ width: "150px", height: "42px" }}
                                 >
                                     <div className="search-icon"> 
-                                    <IoSearch />
+                                    <FontAwesomeIcon icon={faCoffee} color="red" />
+
                                     </div>
-                                    
                                 </Button>
                             </div>
                         </InputGroup>
