@@ -1,16 +1,16 @@
-import React, { useState } from "react"
-import "bootstrap/dist/css/bootstrap.min.css"
-import InputGroup from "react-bootstrap/InputGroup"
-import FormControl from "react-bootstrap/FormControl"
-import Button from "react-bootstrap/Button"
-import axios from "axios"
-import { BsSearch } from "react-icons/bs";
-import InfiniteScroll from "react-infinite-scroll-component"
-import Card from "./Card"
-import { Container, Row, Col } from "react-bootstrap"
+import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import InputGroup from "react-bootstrap/InputGroup";
+import FormControl from "react-bootstrap/FormControl";
+import Button from "react-bootstrap/Button";
+import axios from "axios";
+import InfiniteScroll from "react-infinite-scroll-component";
+import Card from "./Card";
+import { Container, Row, Col } from "react-bootstrap";
+import { IoSearch } from "react-icons/io";
 
 
-function SearchArea(props) {
+function SearchArea() {
     const [photo, setPhoto] = useState("")
     const [clientId, setClientId] = useState(
         "YYYw7oE7qPoGGH0TZb3J-h7stckt87pGkvD3-019_bk#"
@@ -78,9 +78,10 @@ function SearchArea(props) {
                                     onClick={handleClick}
                                     style={{ width: "150px", height: "42px" }}
                                 >
-                                    <div className="search-icon">
-                                    <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />
+                                    <div className="search-icon"> 
+                                    <IoSearch />
                                     </div>
+                                    
                                 </Button>
                             </div>
                         </InputGroup>
