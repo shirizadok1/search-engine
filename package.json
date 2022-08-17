@@ -4,6 +4,11 @@
 
   "version": "0.1.0",
 
+  "engines": {
+    "node": "16.15.1",
+    "npm": "8.15.1"
+  },
+
   "private": true,
 
   "dependencies": {
